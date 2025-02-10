@@ -1,7 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+export PATH=$PATH:/$HOME/go/bin
 export ZSH="$HOME/.oh-my-zsh"
+export ZSH_COMPDUMP="$ZSH/cache/.zcompdump-$HOST"
 
 ZSH_THEME="xiong-chiamiov-plus"
 
@@ -51,3 +53,8 @@ function code() {
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+export PATH=$HOME/.local/bin:$PATH
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
