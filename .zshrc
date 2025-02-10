@@ -54,7 +54,11 @@ function code() {
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 export PATH=$HOME/.local/bin:$PATH
+<<<<<<< HEAD
 
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+=======
+export PATH=/usr/local/go/bin:$PATH
+>>>>>>> a72e3dc54e9866c5db4374d52ff2660e98a276cc
